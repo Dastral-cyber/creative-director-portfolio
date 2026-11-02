@@ -1,1 +1,181 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Director Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">D☆stral</div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>  
+        </nav>
+          <a href="#contact" class="btn-contact">Get in touch <span>↗</span></a>
+    
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text-left">
+                    <p class="greeting">Hey, I'm Daniel Iyke and I'm a</p>
+                    <h1>Cybersecurity<br>Personnel</h1>
+                </div>
+
+
+                 <div class="hero-image-frame">
+                   <img src="my-image2.png" alt="Portrait Cyber security personnel">
+                 </div>
+
+                <div class="hero-text-right">
+                    <h2>The web and internet is should be a safe place</h2>
+                    <p>From busting illegal hackers and bringing fruadstars to justice, I'm here to protect you web safety while ensuring its intergrity</p>
+                </div>
+            </div>
+
+
+            <div class="hero-services">
+                 <div class="service-item">
+                    <span class="number">#01</span>
+                     <p>Internet Safety</p>
+                 </div>
+                 
+                  <div class="service-item">
+                    <span class="number">#02</span>
+                    <p>Web security</p>
+                </div>
+
+                <div class="service-item">
+                    <span class="number">#03</span>
+                    <p>Cyber Safety</p>
+                </div>
+
+                <div class="service-item">
+                    <span class="number">#04</span>
+                    <p>Privacy Protections</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-left">
+              <p class="label">GET TO KNOW ME :</p>
+              <h2>Here is a<br>Little information<br>About me and my hobbies</h2>
+            </div>   
+
+            <div class="about-right">
+                <p class="about-description">I am a 100-level Cybersecurity student at MIVA Open University with a growing interest in technology and digital security. My career aspirations include becoming a cybersecurity analyst or ethical hacker and contributing to the field of information security. I have developing skills in HTML, CSS, JavaScript, C programming, and Python. Outside academics, I enjoy playing basketball, programming, exploring new technologies, and listening to music. I am passionate about continuous learning, personal growth, and developing the skills needed to make a meaningful impact in the technology industry.
+
+
+</p>
+
+                 <div class="about-cta">
+                    <p>With that said<br>Let's Secure and protect the Internet</p>
+                    <a href="#" class="btn-contact-middle">Get in touch <span>↗</span></a>
+                 </div>
+            </div>
+
+        </section>
+
+
+        <section class="projects" id="projects">
+            <h2 class="projects-heading">My Projects</h2>
+
+            <div class="projects-gallery"> 
+
+                <!-- Project 1 -->
+                <a href="./Webdev-projects/jollof-recipe-page/index.html" target="_blank" class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="jollof-recipe.jpg" alt="Jollof Recipe Page">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Jollof Recipe Page</h3>
+                        <p>A simple recipe page built with HTML and CSS.</p>
+                    </div>
+                </a> 
+                
+                <!-- Project 2 -->
+                <a href="./Webdev-projects/calculator-project/index.html" target="_blank" class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="calculator.jpg" alt="A simple calculator program">
+                    </div>
+                    <div class="project-info">
+                        <h3>A Simple Calculator</h3>
+                        <p>This is a simple calculator made with HTML and CSS with JavaScript</p>
+                    </div>
+                </a> 
+
+                <!-- Project 3 -->
+                <a href="./Webdev-projects/about-me-daniel-iyke/index.html" target="_blank" class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="about-me.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>A short page about me</h3>
+                        <p>Here is a short page containing my interests</p>
+                    </div>
+                </a> 
+
+            </div>
+        </section>
+
+        <!--Planner Section-->
+        <section class="planner">
+            <h2 class="planner-heading">My Planner</h2>
+
+            <div class="planner-input-area">
+                <input type="text" id="task-input" placeholder="Enter a new task">
+
+                <button id="add-task-btn">Add Task</button>
+            </div>
+
+            <ul id="task-list" class="task-list">
+                <!--task-->
+            </ul>
+        </section>
+
+        <section class="content" id="contact">
+          <h2 class="contact-heading"> Get In Touch</h2>
+          <p class="contact-subtext">Have a question or want to work together? Send me a message</p>
+
+          <form action="https://formspree.io/f/meaapzbr" method="POST" class="contact-form">
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-contact-middle">Send Message</button>
+
+          </form>
+
+        </section>
+
+
+    </main>
+
+
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>

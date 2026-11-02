@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: #10131c;
+  color: #f5f6fa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 360px;
+  padding: 24px;
+  border: 1px solid #2c3242;
+  border-radius: 24px;
+  background: #1a1f2d;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.calculator-header {
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  margin-bottom: 6px;
+  color: #9ca6bb;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.18em;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+.display {
+  min-height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+  overflow: hidden;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  background: #111622;
+  overflow-wrap: anywhere;
+}
+
+.previous-operand {
+  min-height: 18px;
+  color: #9ca6bb;
+  font-size: 0.95rem;
+}
+
+.current-operand {
+  max-width: 100%;
+  font-size: clamp(2rem, 9vw, 2.7rem);
+  font-weight: 600;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.key {
+  min-height: 58px;
+  border: 0;
+  border-radius: 14px;
+  background: #292f40;
+  color: #f5f6fa;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.key:hover {
+  background: #394258;
+}
+
+.key:active {
+  transform: scale(0.95);
+}
+
+.key:focus-visible {
+  outline: 3px solid #a5b4fc;
+  outline-offset: 2px;
+}
+
+.utility {
+  background: #343c50;
+  color: #cbd5e1;
+}
+
+.operator {
+  background: #3b4560;
+  color: #c7d2fe;
+}
+
+.equals {
+  background: #6478e8;
+  color: white;
+}
+
+.equals:hover {
+  background: #788af5;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.hint {
+  margin-top: 18px;
+  color: #8e98ad;
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 380px) {
+  .calculator {
+    padding: 18px;
+  }
+
+  .keypad {
+    gap: 8px;
+  }
+
+  .key {
+    min-height: 54px;
+  }
+}

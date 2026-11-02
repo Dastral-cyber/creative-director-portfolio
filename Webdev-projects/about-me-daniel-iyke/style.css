@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #172033;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.biography, .interests {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #042268;
+}
+
+p {
+    line-height: 1.7;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #172033;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 90%;
+    }
+}
